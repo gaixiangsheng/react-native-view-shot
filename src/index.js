@@ -176,8 +176,8 @@ export default class ViewShot extends Component<Props> {
   _raf: *;
   lastCapturedURI: ?string;
 
-  resolveFirstLayout: (layout: Object) => void;
-  firstLayoutPromise = new Promise<void>(resolve => {
+  resolveFirstLayout: (layout: Object) => Void;
+  firstLayoutPromise = new Promise<Void>(resolve => {
     this.resolveFirstLayout = resolve;
   });
 
